@@ -11,7 +11,7 @@ location = location.strip('\"')
 
 def fetch_data(path): 
 
-	df = pd.read_csv(path, sep=';')
+	df = pd.read_csv(path, sep=',')
 	score_data = df['Total Time'].tolist()
 	scoreless_data = df['Scoreless Time'].tolist()
 	Tees = df['T']
